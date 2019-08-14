@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "local Docker BCONPREM-143-W1",
+            "server": "http://BCONPREM-143-W1",
+            "serverInstance": "NAV",
+            "authentication": "Windows",
+            "startupObjectId": 31,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "port":7049,
+            "schemaUpdateMode": "Recreate"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "local Docker BCSAND-143-GB",
+            "server": "http://BCSAND-143-GB",
+            "serverInstance": "NAV",
+            "authentication": "Windows",
+            "startupObjectId": 31,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "port":7049,
+            "schemaUpdateMode": "Recreate"
+        }
+    ]
+}

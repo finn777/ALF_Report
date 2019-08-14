@@ -1,0 +1,26 @@
+{
+  "id": "dc8aec40-2d74-46b8-ae63-10949e50bf0a",
+  "name": "ALF_Report",
+  "publisher": "Alexey Finogenov",
+  "version": "1.0.190814.0",
+  "brief": "",
+  "description": "ALF Report, report: Inventory - Sales Statistics; remove grouping data by Inventory Posting Group.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://github.com/finn777/ALF_Report/blob/master/readme.md",
+  "url": "https://github.com/finn777/ALF_Report/blob/master/readme.md",
+  "logo": "ALFLogo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 60301,
+      "to": 60301
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALF_Report.com/help/",
+  "showMyCode": true,
+  "runtime": "3.2"
+}
