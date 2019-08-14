@@ -28,7 +28,7 @@ In Business Central SaaS/Cloud version press search button, find Sandbox, select
 Select Host locally.
 ![](media/ALFReport06.png)
 
-As result system provide your file with PowerShell script:
+As result system provide file with PowerShell script:
 ![](media/ALFReport07.png)
 ![](media/ALFReport08.png)
 
@@ -116,10 +116,15 @@ Check that folder C:\ProgramData\NavContainerHelper is empty:
 ![](media/ALFReport17.png)
 
 Stop a bit.
+
 What version of Business Central (image) I should use?
+
 I’ve decided initially to create an extension for on-prem (W1) version.
+
 I am an old-fashioned guy.
+
 // The report that we discuss (712) is the same for W1,GB... versions.
+
 Don’t warry ... I will have the extension in cloud at the end of story.
 
 Now run the script:
@@ -185,7 +190,7 @@ Run in browser http://BCONPREM-143-W1:8080/al-3.0.150570.vsix
 // Take the link from “Key lines from output:” (look upper to the blog post)
 ![](media/ALFReport25.png)
 
-As result system provide your .vsix file.
+As result system provide .vsix file.
 ![](media/ALFReport26.png)
 
 Open Visual Studio Code and install Visual Studio extension (**AL Language**) from VSIX file:
@@ -224,23 +229,23 @@ Modify launch.json
 ![](media/ALFReport37.png)
 
 	{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "al",
-            "request": "launch",
-            "name": "local Docker BCONPREM-143-W1",
-            "server": "http://BCONPREM-143-W1",
-            "serverInstance": "NAV",
-            "authentication": "Windows",
-            "startupObjectId": 31,
-            "startupObjectType": "Page",
-            "breakOnError": true,
-            "launchBrowser": true,
-            "port":7049,
-            "schemaUpdateMode": "Recreate"
-        }
-    ]
+	    "version": "0.2.0",
+	    "configurations": [
+	        {
+	            "type": "al",
+	            "request": "launch",
+	            "name": "local Docker BCONPREM-143-W1",
+	            "server": "http://BCONPREM-143-W1",
+	            "serverInstance": "NAV",
+	            "authentication": "Windows",
+	            "startupObjectId": 31,
+	            "startupObjectType": "Page",
+	            "breakOnError": true,
+	            "launchBrowser": true,
+	            "port":7049,
+	            "schemaUpdateMode": "Recreate"
+	        }
+	    ]
 	}
 
 
@@ -293,7 +298,7 @@ As result we should see Microsoft .alpackages
 
 *Well, now we need to use ‘an old trick’ take an exist standard object, rename it, set new object id and later modify a bit.*
 
-**All standard object in .al format already in our folder Original-14.3.34444.0-W1-al**
+**All standard objects in .al format already in our folder Original-14.3.34444.0-W1-al**
 ![](media/ALFReport43.png)
 
 Search in folder by InventorySalesStatistics (in general .al name containing one word that convert from c/al name with exclude space, dash etc.)
@@ -432,7 +437,8 @@ Run new report (second version).
 
 ![](media/ALFReport71.png)
 
-Great. Let’s try to test our Extension with Sandbox (Container option)
+Great. Let’s try to test our Extension with Sandbox (Container option).
+
 Run as administrator Windows PowerShell ISE. Run the script.
 ![](media/ALFReport72.png)
 
@@ -459,7 +465,7 @@ Run as administrator Windows PowerShell ISE. Run the script.
 As result
 ![](media/ALFReport73.png)
 
-Key lines from output 2:
+**Key lines from output 2:**
 
 	Assign Premium plan for BCSAND-143-GB\ALEXEF
 	Container IP Address: 172.29.180.244
@@ -588,11 +594,11 @@ Check Permission Set:
 ![](media/ALFReport95.png)
 
 
-Github project: 
+Github project: [https://github.com/finn777/ALF_Report](https://github.com/finn777/ALF_Report)
  
-Readme: 
+Readme: [https://github.com/finn777/ALF_Report/blob/master/readme.md](https://github.com/finn777/ALF_Report/blob/master/readme.md)
  
-.app file:
+.app file: [https://github.com/finn777/ALF_Report/blob/master/Alexey%20Finogenov_ALF_Report_1.0.190814.0.app](https://github.com/finn777/ALF_Report/blob/master/Alexey%20Finogenov_ALF_Report_1.0.190814.0.app)
 
 **Useful links:**
 
