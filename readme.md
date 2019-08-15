@@ -1,6 +1,6 @@
 ## Example how to add a report in Business Central SaaS/Cloud version with use locally hosted Container Sandbox
 ![](media/ALFlogo.png)
-> The world is changing … The cloud story pushing us to use modern dev tools, docker container etc.
+> The world is changing … The cloud story is pushing us to use modern dev tools, docker container etc.
 In this blog post I’ll try to show the example how to add a report in Business Central SaaS/Cloud version with use locally hosted Container Sandbox. The many pictures will below.
 
 Imagine that we have a good old Business Central on-prem version and run report: Inventory - Sales Statistics
